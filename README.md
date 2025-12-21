@@ -2,13 +2,14 @@
 
 ## 关于
 
-`OnePrinter`是北京网为科技有限公司自主研发的打印机桥链软件，专注于解决`Web`调用`打印机`（本机或局域网中）进行`批量打印`的问题。
+`OnePrinter`是一款由北京网为科技有限公司开发的`Web批量打印控件`，专注于解决`Web`调用`打印机`（本机或局域网中）进行`批量打印`的问题。
 
-* 支持跨平台`Windows`、`MacOS`、`Linux`等操作系统。
+* 支持`Web`通过`POST`传参唤起系统打印机进行批量打印。
+
+* 支持`Windows`、`MacOS`、`Linux`等操作系统。
   
 * 支持`文档`、`图片`、`PDF`、`Base64`等格式。
 
-* 以`http`形式接收`Web`参数传输给打印机。
 
 ## 应用场景
 
@@ -24,7 +25,9 @@
 
 ## 免费下载
 
-Windows版下载：
+#### Windows版下载：
+
+<https://github.com/chensproject/OnePrinter>
 
 <https://gitee.com/chenrongbin/oneprinter>
 
