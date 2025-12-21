@@ -31,16 +31,6 @@
 
 <https://gitee.com/chenrongbin/oneprinter>
 
-## 注册授权
-
-| 本地授权     | 域名授权       |
-| ----------- | ----------- |
-| 免费   | 799元/个      |
-
-<img src="https://static.wangwei.ltd/image/chens.png"  width="200px" />
-
-加群、咨询、购买授权，备注：OnePrinter
-
 ## 请求示例
 
 ```js
@@ -63,6 +53,16 @@ export async function toPrint(url,base64) {
     }
 }
 ```
+
+## 注册授权
+
+| 本地授权     | 域名授权       |
+| ----------- | ----------- |
+| 免费   | 799元/个      |
+
+<img src="https://static.wangwei.ltd/image/chens.png"  width="200px" />
+
+加群、咨询、购买授权，备注：OnePrinter
 
 ## 版本更新
 
