@@ -10,7 +10,6 @@
   
 * 支持`文档`、`图片`、`PDF`、`Base64`等格式。
 
-
 ## 应用场景
 
 * 批量打印票据、订单、发票；
@@ -25,7 +24,7 @@
 
 ## 免费下载
 
-#### Windows版下载：
+#### Windows版下载
 
 <https://github.com/chensproject/OnePrinter>
 
@@ -40,7 +39,7 @@ import {Post} from "@/util/http";
 export async function toPrint(url,base64) {
     // url和base64，二选一。
     let obj = {
-        key: "", // 如需网络打印，请注册授权获取。如本地打印，则填16位字符即可。
+        key: "", // 如本地打印，请留空。如需网络域名打印，请注册授权获取。
         url: url, // 打印文件的地址，如 https://abc.com/1.doc。
         base64: base64 //打印文件的base64代码
     };
@@ -56,15 +55,24 @@ export async function toPrint(url,base64) {
 
 ## 注册授权
 
-| 本地授权     | 域名授权       |
-| ----------- | ----------- |
-| 免费   | 799元/个      |
+| 本地授权     | 子域名授权       | 顶级域名授权       |
+| ----------- | ----------- | ----------- |
+| localhost:8080、127.0.0.1:8080   | abc.wangwei.ltd、abc.docs.wangwei.ltd      | *.wangwei.ltd      |
+| 免费   | 699元/个      |899元/个      |
+
+<i>注：域名指访问方式，支持端口访问。一次购买，永久授权。</i>
+
+咨询、加群、购买授权，可加微信二维码，备注：OnePrinter。
 
 <img src="https://static.wangwei.ltd/image/chens.png"  width="200px" />
 
-加群、咨询、购买授权，备注：OnePrinter
-
 ## 版本更新
+
+#### 1.0.4（2025年12月22日）
+
+<b>优化：</b>
+
+* 优化顶级域名授权、子域名授权功能。
 
 #### 1.0.3（2025年12月21日）
 
