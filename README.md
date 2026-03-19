@@ -2,7 +2,7 @@
 
 ## 关于
 
-`OnePrinter`是一款由北京网为科技有限公司开发的`Web批量打印控件`，专注于解决`Web`调用`打印机`（本机或局域网中）进行`批量打印`的问题。
+`OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的`Web批量打印控件`，专注于解决`Web`调用`打印机`（本机或局域网中）进行`批量打印`的问题。
 
 * 支持`Web`通过`POST`传参唤起系统打印机进行批量打印。
 
@@ -25,6 +25,8 @@
 ## 免费下载
 
 #### Windows版下载
+
+<https://docs.wangwei.ltd/guide/oneprinter/>
 
 <https://github.com/chensproject/OnePrinter>
 
