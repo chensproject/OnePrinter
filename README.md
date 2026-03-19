@@ -64,7 +64,7 @@ export async function toPrint(url,base64) {
 
 <i>注：域名指访问方式，支持端口访问。一次购买，永久授权。</i>
 
-咨询、加群、购买授权，可加微信二维码，备注：OnePrinter。
+咨询、加群、购买授权，可加微信二维码，备注：OnePrinter 。
 
 <img src="https://static.wangwei.ltd/image/chens.png"  width="200px" />
 
