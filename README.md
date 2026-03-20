@@ -1,4 +1,4 @@
-# OnePrinter
+# OnePrinter 打印控件
 
 ## 关于
 
@@ -32,6 +32,14 @@
 
 <https://gitee.com/chenrongbin/oneprinter>
 
+### 使用方法
+
+<img src="/assets/static/image/demo.png"/>
+
+界面包含OnePrinter的ICON、启动状态、打印机选择器、请求URL等。
+
+点击打印机选择器可以一键设置默认打印机。
+
 ## 请求示例
 
 ```js
@@ -41,12 +49,12 @@ import {Post} from "@/util/http";
 export async function toPrint(url,base64) {
     // url和base64，二选一。
     let obj = {
-        key: "", // 如本地打印，请留空。如需网络域名打印，请注册授权获取。
-        url: url, // 打印文件的地址，如 https://abc.com/1.doc。
+        key: "xxx", // 如本地打印，请留空或随意填写。如需网络域名打印，请注册授权获取。
+        url: url, // 文件的网络地址，本地亦可，如 https://static.wangwei.ltd/image/favicon.png 。
         base64: base64 //打印文件的base64代码
     };
     // 如10081端口被占用，请尝试10082端口。
-    const res = await Post("http://127.0.0.1:10081/print", obj);
+    const res = await Post("http://127.0.0.1:10081/print", obj);  //调用局域网中的打印机，可使用：192.168.x.x，具体请参照主界面网址。
     if (res.data.code === 1) {
         // 执行成功
     }else{
@@ -70,11 +78,17 @@ export async function toPrint(url,base64) {
 
 ## 版本更新
 
+#### 1.0.6（2026年03月23日）
+
+<b>新增：</b>
+
+* 局域网打印机调用能力。
+
 #### 1.0.5（2026年03月19日）
 
 <b>新增：</b>
 
-* 默认打印机设置能力
+* 默认打印机设置能力。
 
 #### 1.0.4（2025年12月22日）
 
