@@ -1,23 +1,30 @@
 
+
 ## 关于
 
-`OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的打印控件，专注于解决打印机调用的问题。例如：如何在局域网内隔空共享打印机？如何在网页实现静默打印？如何管理打印机日志？……
+`OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的打印控件，专注于解决打印机调用问题。
+
+`OnePrinter`可以轻松实现打印机集中管理，并进行隔空共享打印、网页静默打印等功能，也可以实现共享打印全流程化管理，满足一般企业的打印机共享需求。
 
 * 支持Web通过POST请求，传参唤起系统打印机进行批量打印。
 
-* 支持Windows、MacOS、Linux等操作系统。
-  
 * 支持Word、PDF、图片、Base64等格式打印。
 
 * 支持端口号自定义。
 
-* 支持局域网调用，可在其他电脑上传参。
+* 支持局域网/互联网调用，可在其他设备传参打印或隔空打印。
 
-* 支持本机打印功能，选择相应文档或图片即可进行打印。
+* 支持隔空打印，可指定打印机、局域网/互联网、限次、限时等，其他手机/电脑可扫码、打开链接上传打印。
+  
+* 支持本机打印。
 
-* 支持隔空打印功能，手机扫码或打开链接即可进行打印。
+* 支持局域网设备管理，包括详情、扫描、禁用/激活指定设备。
 
-* 支持打印日志记录，包括删除、清空等操作。
+* 支持分享日志管理，包括详情、暂停、删除、清空等操作
+
+* 支持打印日志管理，包括详情、删除、清空等操作。
+
+* 支持Windows、MacOS、Linux等操作系统。
 
 ## 应用场景
 
@@ -33,9 +40,11 @@
 
 * 局域网隔空打印；
 
-* 其他……
+* 打印店、学校、单位等，对打印机的集中管理；
 
-## 网官地址
+* 其他
+
+## 官网地址
 
 <https://docs.wangwei.ltd/guide/oneprinter/>
 
@@ -49,30 +58,22 @@
 
 ## 使用方法
 
-### 网页打印
+### 系统首页
 
 主界面包含OnePrinter的ICON、版本号、启动状态、打印机选择、端口号设置、请求URL等。可以一键设置默认打印机、端口号，复制请求相应的请求URL。
 
 注意：修改端口号后需要同步在js或vue中修改请求URL
 
-::: window title="OnePrinter 主视觉"
+::: window title="OnePrinter 系统首页"
 ![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home1.png)
 :::
 
-::: window title="OnePrinter 护眼模式"
+::: window title="OnePrinter 英文版"
 ![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home2.png)
 :::
 
-::: window title="OnePrinter 配色设置"
+::: window title="OnePrinter 护眼模式"
 ![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home3.png)
-:::
-
-### 本机打印
-
-点击【选择文件】按钮并选中相应文件后（可多选），会出现待打印文件列表，然后点击【开始打印】即可开始工作。
-
-::: window title="OnePrinter 本机打印"
-![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/pc.png)
 :::
 
 ### 隔空打印
@@ -80,19 +81,35 @@
 使用微信扫描二维码，在手机界面中点击【选择文件】按钮并选中相应文件后（可多选），会出现待打印文件列表，然后点击【开始打印】即可开始工作。
 
 ::: window title="OnePrinter 隔空打印"
-![OnePrinter隔空打印](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
+![OnePrinter隔空打印](https://static.wangwei.ltd/image/guide/oneprinter/air.png)
 :::
 
-::: window title="OnePrinter 隔空打印"
-![OnePrinter隔空打印](https://static.wangwei.ltd/image/guide/oneprinter/phone_upload.png)
+::: window title="OnePrinter 手机打印"
+![OnePrinter手机打印](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
+:::
+
+### 本机打印
+
+点击【选择文件】按钮并选中相应文件后（可多选），会出现待打印文件列表，然后点击【开始打印】即可开始工作。
+
+::: window title="OnePrinter 本机打印"
+![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/local.png)
+:::
+
+### 分享日志
+
+可以对隔空打印分享的内容进行管理、查询等。
+
+::: window title="OnePrinter 分享日志"
+![OnePrinter分享日志](https://static.wangwei.ltd/image/guide/oneprinter/share.png)
 :::
 
 ### 设备管理
 
 设备管理可以管理局域网内所有发起打印的终端设备，并可禁止/激活相应设备。
 
-::: window title="OnePrinter 打印日志"
-![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/network.png)
+::: window title="OnePrinter 设备管理"
+![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
 :::
 
 ### 打印日志
@@ -103,6 +120,14 @@
 
 ::: window title="OnePrinter 打印日志"
 ![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/log.png)
+:::
+
+### 通用设置
+
+可以设置临时文件存储地址、语言、护眼模式、字号、配色等。
+
+::: window title="OnePrinter 通用设置"
+![OnePrinter通用设置](https://static.wangwei.ltd/image/guide/oneprinter/setting.png)
 :::
 
 ## 请求示例
@@ -145,8 +170,8 @@ export async function toPrint(url,base64) {
 | 网页打印 | ✅ 支持 | ✅ 支持 |
 | 本机打印 | ✅ 支持 | ✅ 支持 |
 | 隔空打印 | ✅ 支持 | ✅ 支持 |
-| 设备管理 | ❌ 不支持 | ✅ 支持 |
-| 打印日志 | ❌ 不支持 | ✅ 支持 |
+| 设备管理 | ✅ 支持 | ✅ 支持 |
+| 打印日志 | ✅ 支持 | ✅ 支持 |
 | 域名访问 | ❌ 不支持 | ✅ 支持 |
 | 通用设置 | ✅ 支持 | ✅ 支持 |
 
@@ -155,6 +180,26 @@ export async function toPrint(url,base64) {
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.6（2026年05月05日）
+
+<b>新增：</b>
+
+* 互联网打印；
+* 隔空打印限定；
+* 打印提示音；
+
+<b>优化：</b>
+
+* 隔空打印逻辑
+
+#### 1.1.5（2026年04月28日）
+
+<b>新增：</b>
+
+* 英文版；
+* 网页打印、本机打印、隔空打印分别可以自定义打印机。
+* 隔空打印功能配置及分享日志。
 
 #### 1.1.4（2026年04月27日）
 
