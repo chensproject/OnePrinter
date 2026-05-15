@@ -1,4 +1,5 @@
 
+
 ## 关于
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的打印控件，专注于解决打印机调用问题。
@@ -45,9 +46,7 @@
 
 ### 系统首页
 
-主界面包含OnePrinter的ICON、版本号、启动状态、打印机选择、端口号设置、请求URL等。可以一键设置默认打印机、端口号，复制请求相应的请求URL。
-
-注意：修改端口号后需要同步在js或vue中修改请求URL
+相关数据的可视化显示。
 
 ::: window title="OnePrinter 系统首页"
 ![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home1.png)
@@ -63,30 +62,51 @@
 
 ### 隔空打印
 
-使用微信扫描二维码，在手机界面中点击【选择文件】按钮并选中相应文件后（可多选），会出现待打印文件列表，然后点击【开始打印】即可开始工作。
+设置分享名称、指定分享打印机、选择网络范围、选择是否开启并设置口令、可限次、限时、选择是否开启份数、横版、双面、页码、彩色、纸张供用户选择，然后确定即可创建用于分享的二维码和链接。
+此二维码和链接永久有效，可张贴或转发给需要打印的用户。
+此二维码有2种形式，局域网的为H5页面、互联网的为微信小程序页面，都可在电脑或手机上打开。
+用户在此界面上可发起打印任务。
 
 ::: window title="OnePrinter 隔空打印"
 ![OnePrinter隔空打印](https://static.wangwei.ltd/image/guide/oneprinter/air.png)
 :::
 
-::: window title="OnePrinter 手机打印"
-![OnePrinter手机打印](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
+::: window title="OnePrinter 隔空打印 - 用户端"
+![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
 :::
 
 ### 本机打印
 
-点击【选择文件】按钮并选中相应文件后（可多选），会出现待打印文件列表，然后点击【开始打印】即可开始工作。
+选择打印机、横版、份数、双面、纸张、彩色，然后将文件拖入其中即可发起打印任务。
 
 ::: window title="OnePrinter 本机打印"
 ![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/local.png)
 :::
 
+### 接口打印
+
+web或其他软件将数据通过POST请求发送发送给本机或局域网URL，即可发起静默批量打印。可指定打印机，不限打印机及任务。
+
+::: window title="OnePrinter 接口打印"
+![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/api.png)
+:::
+
 ### 分享日志
 
-可以对隔空打印分享的内容进行管理、查询等。
+对创建的隔空打印进行相应管理。
 
 ::: window title="OnePrinter 分享日志"
 ![OnePrinter分享日志](https://static.wangwei.ltd/image/guide/oneprinter/share.png)
+:::
+
+### 打印日志
+
+对所有打印行为进行相应管理。
+
+注意：磁盘空间会不断占用，点击【一键清空】即可清空所有记录。也可以在【通用设置】-【高级设置】中对文件存储路径进行修改。
+
+::: window title="OnePrinter 打印日志"
+![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/log.png)
 :::
 
 ### 设备管理
@@ -97,19 +117,9 @@
 ![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
 :::
 
-### 打印日志
-
-打印日志记录OnePrinter所有打印行为的记录，可以查看打印的具体内容和时间，也可以删除或清空。
-
-注意：磁盘空间可能会不断占用，点击【一键清空】即可清空所有记录。
-
-::: window title="OnePrinter 打印日志"
-![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/log.png)
-:::
-
 ### 通用设置
 
-可以设置临时文件存储地址、语言、护眼模式、字号、配色等。
+可以设置临时文件存储地址、端口号、语言、护眼模式、字号、配色等。
 
 ::: window title="OnePrinter 通用设置"
 ![OnePrinter通用设置](https://static.wangwei.ltd/image/guide/oneprinter/setting.png)
