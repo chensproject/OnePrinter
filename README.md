@@ -1,5 +1,4 @@
 
-
 ## 关于
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的打印控件，专注于解决打印机调用问题。
@@ -54,10 +53,6 @@
 
 ::: window title="OnePrinter 英文版"
 ![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home2.png)
-:::
-
-::: window title="OnePrinter 护眼模式"
-![OnePrinter](https://static.wangwei.ltd/image/guide/oneprinter/home3.png)
 :::
 
 ### 隔空打印
@@ -178,6 +173,24 @@ export async function toPrint(url,base64) {
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.16（2026年05月16日）
+
+<b>修复：</b>
+
+* 紧急修复横板导致的图片打印失败问题；
+* 首页数据统计起止时间问题；
+
+#### 1.1.15（2026年05月16日）
+
+<b>新增：</b>
+
+* 系统首页打印机使用情况、打印类型饼图；
+* 开机自动启动设置；
+
+<b>优化：</b>
+
+* 隔空打印创建时的打印机选择，用户端（本地）当只有一台打印机时自动设为默认打印机（无需选择）；
 
 #### 1.1.14（2026年05月15日）
 
