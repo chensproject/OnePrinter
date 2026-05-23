@@ -1,4 +1,5 @@
 
+
 ## 关于
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的打印控件，专注于解决打印机调用问题。
@@ -37,6 +38,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.20 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.20/onePrinter.exe> |
 | 1.1.19 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.19/onePrinter.exe> |
 | 1.1.18 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.18/onePrinter.exe> |
 
@@ -158,6 +160,18 @@ export async function toPrint(url,base64) {
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.20（2026年05月23日）
+
+<b>新增：</b>
+
+* 启用口令直接呼出键盘；
+* 增加接口编码（为后续打印客户端准备）；
+* 非法打印请求拦截；
+
+<b>优化：</b>
+
+* 去除局域网与互联网的选择，改成自动创建（无外网时只创建内网）；
 
 #### 1.1.19（2026年05月21日）
 
