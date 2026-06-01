@@ -38,6 +38,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.21 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.21/OnePrinter.exe> |
 | 1.1.20 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.20/onePrinter.exe> |
 | 1.1.19 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.19/onePrinter.exe> |
 | 1.1.18 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.18/onePrinter.exe> |
@@ -160,6 +161,18 @@ export async function toPrint(url,base64) {
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.21（2026年06月01日）
+
+<b>新增：</b>
+
+* 隔空共享的打印审核功能。一旦开启，需要在打印日志中进行审核，需审核后才能打印；
+* 隔空共享的格式限定，一旦开启，需要适配的格式才能打印；
+* 内外网用户端中英文切换；
+
+<b>修复：</b>
+
+* 打印日志中api名称、二维码显示问题；
 
 #### 1.1.20（2026年05月23日）
 
