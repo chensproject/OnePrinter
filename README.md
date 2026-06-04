@@ -37,6 +37,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.22 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.22/onePrinter.exe> |
 | 1.1.21 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.21/OnePrinter.exe> |
 | 1.1.20 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.20/onePrinter.exe> |
 | 1.1.19 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.19/onePrinter.exe> |
@@ -159,6 +160,16 @@ export async function toPrint(url,base64) {
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.22（2026年06月04日）
+
+<b>优化：</b>
+
+* 自动获取打印机时，不再获取虚拟打印机；
+* 自动获取打印机对应的纸张；
+* 接口测试切换打印机不再设置为默认打印机，改为post传参时传入打印机；
+* 内网用户端的“局域网”改成“内网”统一识别；
+* 内网路径优化，避免端口修改引发访问失败问题；
 
 #### 1.1.21（2026年06月01日）
 
