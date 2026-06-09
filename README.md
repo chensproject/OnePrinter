@@ -1,3 +1,4 @@
+
 ## 关于
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的`免费`共享打印软件，专注于解决打印机共享、管理和调用问题。
@@ -191,7 +192,7 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 安装完成后，该电脑上即会出现OnePrinterClient虚拟打印机，在Word、PPT、Excel、PDF、图片等文档中执行打印时，选择OnePrinterClient即可发起打印，打印请求发送成功后会显示“发送成功”弹窗，即表示发送成功。
 
 ::: window title="OnePrinterClient 预览打印"
-![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/4-1.png)
+![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/4-1-1.png)
 :::
 
 ::: window title="OnePrinterClient 预览打印"
