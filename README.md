@@ -35,7 +35,7 @@
 
 ## 官网地址
 
-<https://wwww.oneprinter.cn> (还在建设中)
+<https://www.oneprinter.cn> (还在建设中)
 
 <https://docs.wangwei.ltd/guide/oneprinter/>
 
