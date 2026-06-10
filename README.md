@@ -1,5 +1,4 @@
-
-## 关于
+# OnePrinter 打印软件
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的`免费`共享打印软件，专注于解决打印机共享、管理和调用问题。
 
@@ -7,6 +6,7 @@
 
 * 支持打印机不限。
 * 支持断网、内网独立运行。
+* 支持外网（互联网或云端）打印。
 * 支持电脑端客户端发起预览打印。
 * 支持Web通过POST请求，传参唤起系统打印机进行批量打印。
 * 支持端口号自定义。
@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.23 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.23/onePrinter.exe> |
 | 1.1.22 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.22/onePrinter.exe> |
 | 1.1.21 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.21/OnePrinter.exe> |
 | 1.1.20 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.20/onePrinter.exe> |
@@ -144,9 +145,11 @@ export async function toPrint(url,base64) {
 
 ## 电脑客户端
 
-预计于2026年6月10日上线
+| Windows | 下载地址 |
+|-----|-----|
+| 1.1.1 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.1/OnePrinterClient.exe> |
 
-OnePrinterClient专为电脑发起打印设计，采用虚拟打印机+Http请求方式发起打印任务，无论内外网，均可发起打印。最终打印体验、效果与传统发起打印一致。
+OnePrinterClient是北京网为科技有限公司（简称:`网为®`）专为电脑发起打印开发的客户端软件。使用虚拟打印机发起打印任务，无论内外网均可发起打印。最终打印体验、效果与传统发起打印一致。
 
 OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打印任务的接收、分发和执行，二者相互协作完成打印。
 
@@ -159,32 +162,34 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 在主机上安装OnePrinter，并创建一个隔空共享。创建成功后，下载接口文件config.txt。
 
 ::: window title="OnePrinter 下载接口文件"
-![OnePrinter下载接口文件](https://static.wangwei.ltd/image/guide/oneprinter/client/1.png)
+![OnePrinter下载接口文件](https://static.wangwei.ltd/image/guide/oneprinter/client/step1.png)
 :::
 
 ### 打包文件
 
 把下载的config.txt文件放在文件夹内，文件夹包含2个文件：
 
-* OnePrinterClient_setup.exe
+* OnePrinterClient.exe
 * config.txt
 
 ::: window title="OnePrinterClient 打包文件"
-![OnePrinterClient打包文件](https://static.wangwei.ltd/image/guide/oneprinter/client/2.png)
+![OnePrinterClient打包文件](https://static.wangwei.ltd/image/guide/oneprinter/client/step2.png)
 :::
 
 ### 复制安装
 
-将安装文件复制到需要发起打印任务的电脑上，并点击OnePrinterClient_setup.exe执行安装，安装完成后会显示成功弹窗。
+将安装文件复制到需要发起打印任务的电脑上，存到一个妥善的位置，并点击OnePrinterClient.exe执行安装，安装完成后会显示成功弹窗。
+
+之后，OnePrinterClient会常驻进程，重启自动加载。
 
 ::: window title="OnePrinterClient 复制安装"
-![OnePrinterClient复制安装](https://static.wangwei.ltd/image/guide/oneprinter/client/3.png)
+![OnePrinterClient复制安装](https://static.wangwei.ltd/image/guide/oneprinter/client/step3.png)
 :::
 
 看到成功弹窗后，可以在Windows打印机中看到下图，这就完成了安装过程。
 
 ::: window title="OnePrinterClient 打印机"
-![OnePrinterClient打印机](https://static.wangwei.ltd/image/guide/oneprinter/client/4.png)
+![OnePrinterClient打印机](https://static.wangwei.ltd/image/guide/oneprinter/client/step3_1.png)
 :::
 
 ### 预览打印
@@ -192,16 +197,26 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 安装完成后，该电脑上即会出现OnePrinterClient虚拟打印机，在Word、PPT、Excel、PDF、图片等文档中执行打印时，选择OnePrinterClient即可发起打印，打印请求发送成功后会显示“发送成功”弹窗，即表示发送成功。
 
 ::: window title="OnePrinterClient 预览打印"
-![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/4-1-1.png)
+![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/step4.png)
 :::
 
 ::: window title="OnePrinterClient 预览打印"
-![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/4-2.png)
+![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/step4_1.png)
 :::
 
 ::: window title="OnePrinterClient 预览打印"
-![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/4-3.png)
+![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/step4_2.png)
 :::
+
+### 卸载软件
+
+如需结束进程，请使用Ctrl+Alt+Del调出任务管理器，找到OnePrinterClient结束进程即可。
+
+如需卸载软件，请在当前文件夹的地址框中输入CMD回车，打开命令窗口输入：
+
+``` cmd
+OnePrinterClient.exe -uninstall
+```
 
 ## 注册授权
 
@@ -227,6 +242,13 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.23（2026年06月10日）
+
+<b>新增：</b>
+
+* 增加电脑打印客户端功能，支持内/外网接口、支持预览打印、支持虚拟打印机、支持在word、pdf、图片等软件中发起打印，真实还原传统打印模式；
+* 增加电脑客户端的接口下载功能；
 
 #### 1.1.22（2026年06月04日）
 
