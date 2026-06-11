@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.24 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.24/onePrinter.exe> |
 | 1.1.23 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.23/onePrinter.exe> |
 | 1.1.22 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.22/onePrinter.exe> |
 | 1.1.21 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.21/OnePrinter.exe> |
