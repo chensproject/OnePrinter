@@ -146,9 +146,7 @@ export async function toPrint(url,base64) {
 
 ## 电脑客户端
 
-| Windows | 下载地址 |
-|-----|-----|
-| 1.1.1 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.1/OnePrinterClient.exe> |
+下载地址：<https://gitee.com/chenrongbin/one-printer-client>
 
 OnePrinterClient是北京网为科技有限公司（简称:`网为®`）专为电脑发起打印开发的客户端软件。使用虚拟打印机发起打印任务，无论内外网均可发起打印。最终打印体验、效果与传统发起打印一致。
 
