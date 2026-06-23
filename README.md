@@ -45,6 +45,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.26 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.26/onePrinter.exe> |
 | 1.1.25 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.25/onePrinter.exe> |
 | 1.1.24 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.24/onePrinter.exe> |
 | 1.1.23 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.23/onePrinter.exe> |
@@ -56,9 +57,11 @@
 
 ### 客户端
 
+请与OnePrinter 1.1.26及以上版本配合使用。
+
 | Windows | 下载地址 |
 |-----|-----|
-| 1.1.3 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.3/OnePrinterClient.exe> |
+| 1.1.4 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.4/OnePrinterClient.exe> |
 
 ## 使用说明
 
@@ -167,37 +170,30 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ### 接口文件
 
-在服务端上安装OnePrinter，并创建一个隔空共享。创建成功后，下载接口文件config.txt。
+在OnePrinter服务端创建一个隔空共享。下载接口文件.txt，该文件包含客户端配置信息。
 
 ::: window title="OnePrinter 下载接口文件"
-![OnePrinter下载接口文件](https://static.wangwei.ltd/image/guide/oneprinter/client/step1.png)
+![OnePrinter下载接口文件](https://static.wangwei.ltd/image/guide/oneprinter/client/0.png)
 :::
 
-### 打包文件
+### 安装客户端
 
-把下载的config.txt文件放在文件夹内，文件夹包含2个文件：
+在客户端电脑上安装OnePrinterClient软件（同一台机器也可以），之后再安装OnePrinterClient打印机。
 
-* OnePrinterClient.exe
-* config.txt
-
-::: window title="OnePrinterClient 打包文件"
-![OnePrinterClient打包文件](https://static.wangwei.ltd/image/guide/oneprinter/client/step2.png)
+::: window title="OnePrinterClient 打印机安装"
+![OnePrinterClient打印机安装](https://static.wangwei.ltd/image/guide/oneprinter/client/1.png)
 :::
 
-### 复制安装
+### 系统配置
 
-将安装文件复制到需要发起打印任务的电脑上，存到一个妥善的位置，并点击OnePrinterClient.exe执行安装，安装完成后会显示成功弹窗。
+根据接口文件.txt，配置以下相关信息。
 
-之后，OnePrinterClient会常驻进程，重启自动加载。
-
-::: window title="OnePrinterClient 复制安装"
-![OnePrinterClient复制安装](https://static.wangwei.ltd/image/guide/oneprinter/client/step3.png)
+::: window title="OnePrinterClient 系统配置"
+![OnePrinterClient系统配置](https://static.wangwei.ltd/image/guide/oneprinter/client/2.png)
 :::
 
-看到成功弹窗后，可以在Windows打印机中看到下图，这就完成了安装过程。
-
-::: window title="OnePrinterClient 打印机"
-![OnePrinterClient打印机](https://static.wangwei.ltd/image/guide/oneprinter/client/step3_1.png)
+::: window title="OnePrinterClient 系统配置"
+![OnePrinterClient系统配置](https://static.wangwei.ltd/image/guide/oneprinter/client/3.png)
 :::
 
 ### 预览打印
@@ -214,6 +210,10 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ::: window title="OnePrinterClient 预览打印"
 ![OnePrinterClient预览打印](https://static.wangwei.ltd/image/guide/oneprinter/client/step4_2.png)
+:::
+
+::: window title="OnePrinterClient 选择云端打印机"
+![OnePrinterClient选择云端打印机](https://static.wangwei.ltd/image/guide/oneprinter/client/4.png)
 :::
 
 ### 卸载软件
@@ -250,6 +250,11 @@ OnePrinterClient.exe -uninstall
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
 ## 更新日志
+
+#### 1.1.26（2026年06月23日）
+
+<b>优化：</b>
+客户端（预览）打印接口；
 
 #### 1.1.25（2026年06月21日）
 
