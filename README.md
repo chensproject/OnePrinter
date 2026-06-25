@@ -45,6 +45,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.27 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.27/onePrinter.exe> |
 | 1.1.26 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.26/onePrinter.exe> |
 | 1.1.25 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.25/onePrinter.exe> |
 | 1.1.24 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.24/onePrinter.exe> |
@@ -240,8 +241,9 @@ OnePrinterClient.exe -uninstall
 | 模板设计 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
 | 系统设置 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
 | 客户端 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
-| 每个分享可打印次数 | 50 | ✅ 不限| ✅ 不限 |✅ 不限 |
-| 每个模板可打印次数 | 50 | ✅ 不限| ✅ 不限 |✅ 不限 |
+| 分享创建 | 3个/天 | ✅ 不限| ✅ 不限 |✅ 不限 |
+| 打印次数 | 50次/个分享 | ✅ 不限| ✅ 不限 |✅ 不限 |
+<!-- | 每个模板可打印次数 | 50次/个 | ✅ 不限| ✅ 不限 |✅ 不限 | -->
 | 免广告 | ❌ 不支持 | ❌ 不支持| ✅ 支持 |✅ 支持 |
 | 自有静态云存储功能和小程序 | ❌ 不支持 | ❌ 不支持| ❌ 不支持 |✅ 支持 |
 
@@ -251,10 +253,25 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.27（2026年06月25日）
+
+<b>新增：</b>
+
+* 支持office和wps原生文档转化，转化效果更佳（重大更新）；
+
+<b>优化：</b>
+
+* 图片打印时的旋转；
+
+<b>优化：</b>
+
+* 小程序聊天窗口中文件发起打印时参数接收的问题；
+
 #### 1.1.26（2026年06月23日）
 
 <b>优化：</b>
-客户端（预览）打印接口；
+
+* 客户端（预览）打印接口；
 
 #### 1.1.25（2026年06月21日）
 
@@ -270,9 +287,6 @@ OnePrinterClient.exe -uninstall
 * 设备管理和隔空打印列表部分显示细节；
 * 左侧菜单护眼模式下文字颜色细节；
 * 日志细节；
-
-<b>优化：</b>
-
 * 隔空打印详情中的日志；
 * 打印日志中的链接；
 
