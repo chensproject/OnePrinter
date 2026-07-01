@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.30 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.30/onePrinter.exe> |
 | 1.1.29 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.29/onePrinter.exe> |
 | 1.1.28 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.28/onePrinter.exe> |
 | 1.1.27 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.27/onePrinter.exe> |
@@ -254,7 +255,6 @@ OnePrinterClient.exe -uninstall
 | 接口打印 | ✅ 支持 | ✅ 支持| ✅ 支持 |✅ 支持 |
 | 设备管理 | ✅ 支持 | ✅ 支持| ✅ 支持 |✅ 支持 |
 | 打印日志 | ✅ 支持 | ✅ 支持| ✅ 支持 |✅ 支持 |
-| 模板设计 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
 | 系统设置 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
 | 客户端 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 |
 | 分享创建 | 3个/天 | ✅ 不限| ✅ 不限 |✅ 不限 |
@@ -262,6 +262,7 @@ OnePrinterClient.exe -uninstall
 | 免广告 | ❌ 不支持 | ❌ 不支持| ✅ 支持 |✅ 支持 |
 | 自有静态云存储功能和小程序 | ❌ 不支持 | ❌ 不支持| ❌ 不支持 |✅ 支持 |
 
+<!-- | 模板设计 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 | -->
 <!-- | 每个模板可打印次数 | 50次/个 | ✅ 不限| ✅ 不限 |✅ 不限 | -->
 
 咨询、加群、购买授权，可加微信二维码，备注：OnePrinter。
@@ -275,6 +276,15 @@ OnePrinterClient.exe -uninstall
 <https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH>
 
 ## 更新日志
+
+#### 1.1.30（2026年07月01日）
+
+<b>修复：</b>
+
+* 双击系统托盘图标恢复；
+* 隔空打印内网的选择系统文件，苹果/安卓均支持；
+* 隔空打印外网的微信图片选择器、选择系统文件（请根据提示重启小程序），苹果/安卓均支持；
+* 邮箱账号功能，在国外的朋友请使用邮箱账号；
 
 #### 1.1.29（2026年06月30日）
 
@@ -619,4 +629,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
