@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.31 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.31/onePrinter.exe> |
 | 1.1.30 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.30/onePrinter.exe> |
 | 1.1.29 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.29/onePrinter.exe> |
 | 1.1.28 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.28/onePrinter.exe> |
@@ -55,10 +56,11 @@
 
 ### 客户端
 
-请与OnePrinter 1.1.26及以上版本配合使用。
+请与OnePrinter服务端 1.1.26及以上版本配合使用。
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.5 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.5/OnePrinterClient.exe> |
 | 1.1.4 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.4/OnePrinterClient.exe> |
 
 ## 使用说明
@@ -276,6 +278,17 @@ OnePrinterClient.exe -uninstall
 <https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH>
 
 ## 更新日志
+
+#### 1.1.31（2026年07月03日）
+
+<b>新增：</b>
+
+* 服务端内部升级功能；
+* 客户端一键导入配置功能；
+
+<b>优化：</b>
+
+* 客户端预览发起打印时，默认为彩色；
 
 #### 1.1.30（2026年07月01日）
 
