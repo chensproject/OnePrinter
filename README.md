@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.32 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.32/onePrinter.exe> |
 | 1.1.31 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.31/onePrinter.exe> |
 | 1.1.30 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.30/onePrinter.exe> |
 | 1.1.29 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.29/onePrinter.exe> |
@@ -277,7 +278,15 @@ OnePrinterClient.exe -uninstall
 
 <https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH>
 
+部分国产打印机的自定义纸张可能不存在，可以在windows的【打印机和扫描仪】-【打印服务器属性】- 添加相应的纸张规格。
+
 ## 更新日志
+
+#### 1.1.32（2026年07月06日）
+
+<b>修复：</b>
+
+* 客户端预览打印时的审核功能；
 
 #### 1.1.31（2026年07月03日）
 
@@ -642,3 +651,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
