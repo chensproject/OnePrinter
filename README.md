@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.34 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.34/onePrinter.exe> |
 | 1.1.33 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.33/onePrinter.exe> |
 | 1.1.32 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.32/onePrinter.exe> |
 | 1.1.31 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.31/onePrinter.exe> |
@@ -58,7 +59,7 @@
 
 ### 客户端
 
-请与OnePrinter服务端 1.1.26及以上版本配合使用。第1运行请使用【以管理员身份】打开软件并安装好虚拟打印机。
+请与OnePrinter服务端 1.1.26及以上版本配合使用。第1次运行请使用【以管理员身份】打开软件并安装好虚拟打印机。
 
 | Windows | 下载地址 |
 |-----|-----|
@@ -202,7 +203,7 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ### 安装客户端
 
-在客户端电脑上安装OnePrinterClient软件（同一台机器也可以），之后再安装OnePrinterClient打印机。
+在客户端电脑上安装OnePrinterClient软件（同一台机器也可以）。之后，第1次运行请使用【以管理员身份】打开软件，再安装OnePrinterClient打印机。
 
 ::: window title="OnePrinterClient 打印机安装"
 ![OnePrinterClient打印机安装](https://static.wangwei.ltd/image/guide/oneprinter/client/1.png)
@@ -285,6 +286,16 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.34（2026年07月13日）
+
+**新增：**
+
+* 输入激活码授权功能，方便断网环境中激活；
+
+**修复：**
+
+* 16位色深导致的部分图片转化失败问题；
 
 #### 1.1.33（2026年07月10日）
 
@@ -671,3 +682,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
