@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
 | 1.1.34 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.34/onePrinter.exe> |
 | 1.1.33 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.33/onePrinter.exe> |
 | 1.1.32 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.32/onePrinter.exe> |
@@ -286,6 +287,12 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.35（2026年07月22日）
+
+**优化：**
+
+* 隔空打印根据打印机限定纸张；
 
 #### 1.1.34（2026年07月13日）
 
@@ -682,4 +689,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
