@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 |-----|-----|
+| 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
 | 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
 | 1.1.34 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.34/onePrinter.exe> |
 | 1.1.33 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.33/onePrinter.exe> |
@@ -60,13 +61,11 @@
 
 ### 客户端
 
-请与OnePrinter服务端 1.1.26及以上版本配合使用。第1次运行请使用【以管理员身份】打开软件并安装好虚拟打印机。
+请与OnePrinter服务端 1.1.36及以上版本配合使用。第1次运行请使用【以管理员身份】打开软件并安装好虚拟打印机。
 
 | Windows | 下载地址 |
 |-----|-----|
-| 1.1.6 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.6/OnePrinterClient.exe> |
-| 1.1.5 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.5/OnePrinterClient.exe> |
-| 1.1.4 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.4/OnePrinterClient.exe> |
+| 1.1.7 | <https://gitee.com/chenrongbin/one-printer-client/releases/download/1.1.7/OnePrinterClient.exe> |
 
 ## 使用说明
 
@@ -196,7 +195,7 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ### 接口文件
 
-在OnePrinter服务端创建一个隔空共享。下载接口文件.txt，该文件包含客户端配置信息。
+在OnePrinter服务端创建至少一个隔空共享。下载接口文件.json，该文件包含客户端配置信息。
 
 ::: window title="OnePrinter 下载接口文件"
 ![OnePrinter下载接口文件](https://static.wangwei.ltd/image/guide/oneprinter/client/0.png)
@@ -204,7 +203,7 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ### 安装客户端
 
-在客户端电脑上安装OnePrinterClient软件（同一台机器也可以）。之后，第1次运行请使用【以管理员身份】打开软件，再安装OnePrinterClient打印机。
+在电脑上安装OnePrinterClient客户端（同一台机器也可以）。之后，第1次运行请使用【以管理员身份】打开软件，再安装OnePrinterClient打印机。
 
 ::: window title="OnePrinterClient 打印机安装"
 ![OnePrinterClient打印机安装](https://static.wangwei.ltd/image/guide/oneprinter/client/1.png)
@@ -212,7 +211,7 @@ OnePrinterClient负责在客户端电脑发起打印请求，OnePrinter负责打
 
 ### 系统配置
 
-根据接口文件.txt，配置以下相关信息。
+在客户端的【系统配置】中，【导入配置】该.json文件或使用【账号同步】同步功能。
 
 ::: window title="OnePrinterClient 系统配置"
 ![OnePrinterClient系统配置](https://static.wangwei.ltd/image/guide/oneprinter/client/2.png)
@@ -287,6 +286,20 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.36（2026年07月23日）
+
+**新增：**
+
+* 客户端账号同步功能，可一键同步所有隔空打印接口；
+
+* 客户端默认设计功能；
+
+**优化：**
+
+* 服务端为适配客户端OnePrinterClient1.1.7版，调整隔空打印接口文件下载格式;
+
+* 客户端系统配置功能；
 
 #### 1.1.35（2026年07月22日）
 
@@ -689,3 +702,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
