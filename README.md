@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
 | 1.1.37 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.37/onePrinter.exe> |
 | 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
 | 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
@@ -179,6 +180,7 @@ export async function toPrint(url,base64) {
         url: "", // 打印文件的地址，如 https://static.wangwei.ltd/image/oneprinter_log.png
         base64: "", // 打印文件的base64代码
         secret_key:"", // 2026年6月15日新增功能：外网接口请传入secret_key，请在【我的账户】获取
+        copies:2, //打印份数
         template:{
             code:"",  // 模板编号：请先设计模板并【下载字段】
             data:[],  // 模板数据：请先设计模板并【下载字段】
@@ -300,6 +302,18 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.38（2026年08月03日）
+
+**新增：**
+
+* 服务端模板打印【导入模板】、【导出模板】功能；
+
+* 服务端接口打印【份数】传参；
+
+**优化：**
+
+* 服务端隔空打印列表、模板打印列表；
 
 #### 1.1.37（2026年08月02日）
 
