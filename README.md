@@ -39,6 +39,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
 | 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
 | 1.1.37 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.37/onePrinter.exe> |
 | 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
@@ -302,6 +303,16 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.39（2026年08月05日）
+
+**新增：**
+
+* 服务端模板打印：图片上传功能，通用纸张类型，打印数据界面的模板编辑跳转；
+
+**优化：**
+
+* 服务端模板打印：打印方向固定（不再旋转90度），打印白边问题；
 
 #### 1.1.38（2026年08月03日）
 
