@@ -2,7 +2,7 @@
 
 `OnePrinter`是北京网为科技有限公司（简称:`网为®`）开发的`免费`共享打印软件，专注于解决打印机共享、管理和调用问题。
 
-`OnePrinter`可以轻松实现打印机共享、管理和调用，如：隔空共享打印、静默打印、电脑客户端预览打印等多种功能，也可以实现打印全流程化管理，满足一般企业的打印机共享需求。
+`OnePrinter`可以轻松实现打印机共享、管理和调用，如：隔空共享打印、模板批量打印、接口静默打印、电脑客户端预览打印等多种功能，也可以实现打印全流程化管理，满足一般企业的打印机共享需求。
 
 * 支持打印机不限。
 * 支持断网、内网独立运行。
@@ -12,6 +12,7 @@
 * 支持端口号自定义。
 * 支持Word、Excel、PowerPoint、PDF、图片、Base64等文件类型。
 * 支持隔空打印，可限定分享的打印机、文件类型、限次、限时、份数、横版、双面、页码、彩色、纸张、验证口令、审核等，其他手机/电脑可扫码、打开链接或小程序上传打印。
+* 支持打印模板设计（二维码、条形码、图片、方形、图片、文字等）、支持批量打印。
 * 支持本机打印。
 * 支持局域网设备管理，包括扫描、详情、备注、禁用/激活指定设备。
 * 支持分享日志管理，包括详情、暂停、删除、清空、审核、拒绝等操作。
@@ -39,6 +40,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.40 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.40/onePrinter.exe> |
 | 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
 | 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
 | 1.1.37 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.37/onePrinter.exe> |
@@ -303,6 +305,18 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.40（2026年08月06日）
+
+**新增：**
+
+* 服务端系统首页模板打印统计；
+  
+* 服务端模板设计元素对齐功能、元素组功等；
+
+**优化：**
+
+* 服务端模板打印的部分细节；
 
 #### 1.1.39（2026年08月05日）
 
@@ -747,5 +761,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
 
