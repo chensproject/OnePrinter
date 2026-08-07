@@ -40,6 +40,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
 | 1.1.40 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.40/onePrinter.exe> |
 | 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
 | 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
@@ -305,6 +306,16 @@ OnePrinterClient.exe -uninstall
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
 ## 更新日志
+
+#### 1.1.41（2026年08月07日）
+
+**新增：**
+
+* 服务端模板设计：文字的方向、样式、字体（增加了思源黑体、思源宋体、得意体、阿里巴巴普惠体、阿里妈妈数黑体、阿里妈妈方圆体、阿里妈妈刀隶体、阿里妈妈东方大楷、钉钉进步体、淘宝买菜体，以及系统自带的其础字体）；
+
+**修复：**
+
+* 服务端模板设计，文字过多时的错位问题、打印预览是放大到2倍后预览错位问题、元素拖拽导致画布边界问题；
 
 #### 1.1.40（2026年08月06日）
 
@@ -761,4 +772,5 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
 
