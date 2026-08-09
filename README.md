@@ -40,6 +40,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.42 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.42/onePrinter.exe> |
 | 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
 | 1.1.40 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.40/onePrinter.exe> |
 | 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
@@ -155,49 +156,53 @@ web或其他软件将数据通过POST请求发送给本机或局域网URL，即�
 ### 请求示例
 
 ``` js
-// 获取打印机列表
+// 获取打印机列表（含打印机对应的纸张列表）。
 import {Post} from "@/util/http";
-export async function toPrint(url,base64) {
-    // url或base64，二选一
+// 可使用本机、内网、外网接口。本机、内网端口可在服务端的【系统设置】-【高级设置】修改。
+let apiUrl = "http://127.0.0.1:10081/getPrinter"
+// let apiUrl = "http://192.168.31.104:10081/getPrinter"
+// let apiUrl = "http://api.oneprinter.cn/api/getPrinter"
+export async function getPrinter() {
     let obj = {
-        secret_key:"", // 2026年6月15日新增功能：外网接口请传入secret_key，请在【我的账户】获取
+        secret_key:"", // 外网接口请传入secret_key，在【我的账户】获取。
     };
-     // 可在OnePrinter的【系统设置】-【高级设置】修改端口
-     //  可使用本机接口、内网接口、外网接口
-    const res = await Post("http://127.0.0.1:10081/getPrinter", obj);
+    const res = await Post(apiUrl, obj);
     if (res.data.code === 1) {
         console.log("结果",res.data.data)
-        // 执行成功
+        // 执行成功。
     }else{
-        // 执行失败
+        // 执行失败。
     }
 }
 ```
 
 ``` js
-// 发送打印任务
+// 发起打印（支持网络文件、Base64和模板打印）。
 import {Post} from "@/util/http";
-export async function toPrint(url,base64) {
-    // url或base64，二选一
+// 可使用本机、内网、外网接口。本机、内网端口可在服务端的【系统设置】-【高级设置】修改。
+let apiUrl = "http://127.0.0.1:10081/print"
+// let apiUrl = "http://192.168.31.104:10081/print"
+// let apiUrl = "http://api.oneprinter.cn/api/print"
+export async function toPrint() {
     let obj = {
-        printer:"", // 指定打印机名称
-        url: "", // 打印文件的地址，如 https://static.wangwei.ltd/image/oneprinter_log.png
-        base64: "", // 打印文件的base64代码
-        secret_key:"", // 2026年6月15日新增功能：外网接口请传入secret_key，请在【我的账户】获取
-        copies:2, //打印份数
+        secret_key:"", // 外网接口请传入secret_key，请在【我的账户】获取。
+        printer:"", // 打印机名称。
+        paper_size:"", // 纸张名称。
+        copies:1, // 打印份数。
+        url: "", // 打印文件的地址，如 https://static.wangwei.ltd/image/oneprinter_log.png，url或base64，二选一。
+        base64: "", // 打印文件的base64代码,url或base64，二选一。
+        // 以下内容，请在【模板打印】中设计模板，然后【下载字段】。
         template:{
-            code:"",  // 模板编号：请先设计模板并【下载字段】
-            data:[],  // 模板数据：请先设计模板并【下载字段】
+            code:"", 
+            data:[], 
         }
     };
-     // 可在OnePrinter的【系统设置】-【高级设置】修改端口
-     //  可使用本机接口、内网接口、外网接口
-    const res = await Post("http://127.0.0.1:10081/print", obj);
+    const res = await Post(apiUrl, obj);
     if (res.data.code === 1) {
         console.log("结果",res.data.data)
-        // 执行成功
+        // 执行成功。
     }else{
-        // 执行失败
+        // 执行失败。
     }
 }
 ```
@@ -274,22 +279,18 @@ OnePrinterClient.exe -uninstall
 
 | 功能 | 免费版 | 授权版 | 专业版 | 定制版 |
 | --------- | ------ | ------ | ------ | ------ |
-| 费用 | 免费 | 699元 | 4999元 | 面议 |
-| 隔空打印 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
+| 隔空打印 | 限创建3个/天，限50次/分享 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
+| 模板打印 | 水印 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
+| 接口打印（本机/内网） | ✅ 免费 | ✅ 免费 | ✅ 免费 | ✅ 免费 |
+| 接口打印（外网） | 0.04元/次 | 0.02元/次 | 0.01元/次 | 0.01元/次 |
 | 本机打印 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
-| 接口打印 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
-| 模板打印 | ✅ 水印 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
-| 设备管理 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
 | 打印日志 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
+| 网络设备 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
 | 系统设置 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
-| 客户端 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
-| 分享创建 | 3个/天 | ✅ 不限 | ✅ 不限 | ✅ 不限 |
-| 打印次数 | 50次/分享 | ✅ 不限 | ✅ 不限 | ✅ 不限 |
+| 电脑客户端 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
 | 免广告 | ❌ 不支持 | ❌ 不支持 | ✅ 支持 | ✅ 支持 |
 | 自有静态云存储功能和小程序 | ❌ 不支持 | ❌ 不支持 | ❌ 不支持 | ✅ 支持 |
-
-<!-- | 模板设计 | ✅ 支持 | ✅ 支持 | ✅ 支持|✅ 支持 | -->
-<!-- | 每个模板可打印次数 | 50次/个 | ✅ 不限| ✅ 不限 |✅ 不限 | -->
+| 费用 | 免费 | 699元 | 4999元 | 面议 |
 
 咨询、加群、购买授权，可加微信二维码，备注：OnePrinter。
 
@@ -305,7 +306,23 @@ OnePrinterClient.exe -uninstall
 
 第1运行，请使用右键的【以管理员身份运行】打开软件，比如虚拟打印机、目录权限可能需要授权。
 
+得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
+
 ## 更新日志
+
+#### 1.1.42（2026年08月09日）
+
+**新增：**
+
+* 服务端接口打印获取打印机时，可获取所有打印机及该打印机所支持的纸张列表（含名称、宽度、高度），发起打印时请指定纸张名称；
+
+* 服务端报错提醒；
+
+**修复：**
+
+* 服务端模板设计器纵向文字断行问题；
+
+* 服务端解绑后机器与账号关联失效的问题；
 
 #### 1.1.41（2026年08月07日）
 
