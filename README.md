@@ -103,12 +103,12 @@
 ![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
 :::
 
-### 本机打印
+### 模板打印
 
-选择打印机、横版、份数、双面、纸张、彩色，然后将文件拖入其中即可发起打印任务。
+可拖拽设计打印模板，进行批量打印。内含文本、圆形、方形、直线、二维码、条形码等元素，支持FDF和图片导出，支持接口打印。适用于如卡证、面单、小票、合格证等场景。
 
-::: window title="OnePrinter 本机打印"
-![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/local.png)
+::: window title="OnePrinter 模板打印"
+![OnePrinter模板打印](https://static.wangwei.ltd/image/guide/oneprinter/template.png)
 :::
 
 ### 接口打印
@@ -119,41 +119,9 @@ web或其他软件将数据通过POST请求发送给本机或局域网URL，即�
 ![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/api.png)
 :::
 
-### 模板打印
+请先安装OnePrinter服务端，然后打开本演示地址进行测试。
 
-可拖拽设计打印模板，进行批量打印。内含文本、圆形、方形、直线、二维码、条形码等元素，支持FDF和图片导出，支持接口打印。适用于如卡证、面单、小票、合格证等场景。
-
-::: window title="OnePrinter 模板打印"
-![OnePrinter模板打印](https://static.wangwei.ltd/image/guide/oneprinter/template.png)
-:::
-
-### 打印日志
-
-对所有打印行为进行相应管理。
-
-注意：磁盘空间会不断占用，点击【一键清空】即可清空所有记录。也可以在【系统设置】-【高级设置】中对文件存储路径进行修改。
-
-::: window title="OnePrinter 打印日志"
-![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/log.png)
-:::
-
-### 设备管理
-
-设备管理可以管理局域网内所有发起打印的终端设备，并可禁止/激活相应设备。
-
-::: window title="OnePrinter 设备管理"
-![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
-:::
-
-### 系统设置
-
-可以设置临时文件存储地址、端口号、语言、护眼模式、字号、配色等。
-
-::: window title="OnePrinter 系统设置"
-![OnePrinter系统设置](https://static.wangwei.ltd/image/guide/oneprinter/setting.png)
-:::
-
-### 请求示例
+演示地址：<https://demo.oneprinter.cn/>
 
 ``` js
 // 获取打印机列表（含打印机对应的纸张列表）。
@@ -206,6 +174,40 @@ export async function toPrint() {
     }
 }
 ```
+
+### 本机打印
+
+选择打印机、横版、份数、双面、纸张、彩色，然后将文件拖入其中即可发起打印任务。
+
+::: window title="OnePrinter 本机打印"
+![OnePrinter本机打印](https://static.wangwei.ltd/image/guide/oneprinter/local.png)
+:::
+
+### 打印日志
+
+对所有打印行为进行相应管理。
+
+注意：磁盘空间会不断占用，点击【一键清空】即可清空所有记录。也可以在【系统设置】-【高级设置】中对文件存储路径进行修改。
+
+::: window title="OnePrinter 打印日志"
+![OnePrinter打印日志](https://static.wangwei.ltd/image/guide/oneprinter/log.png)
+:::
+
+### 设备管理
+
+设备管理可以管理局域网内所有发起打印的终端设备，并可禁止/激活相应设备。
+
+::: window title="OnePrinter 设备管理"
+![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
+:::
+
+### 系统设置
+
+可以设置临时文件存储地址、端口号、语言、护眼模式、字号、配色等。
+
+::: window title="OnePrinter 系统设置"
+![OnePrinter系统设置](https://static.wangwei.ltd/image/guide/oneprinter/setting.png)
+:::
 
 ## 电脑客户端
 
