@@ -40,6 +40,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.44 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.44/onePrinter.exe> |
 | 1.1.43 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.43/onePrinter.exe> |
 | 1.1.42 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.42/onePrinter.exe> |
 | 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
@@ -50,22 +51,6 @@
 | 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
 | 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
 | 1.1.34 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.34/onePrinter.exe> |
-| 1.1.33 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.33/onePrinter.exe> |
-| 1.1.32 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.32/onePrinter.exe> |
-| 1.1.31 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.31/onePrinter.exe> |
-| 1.1.30 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.30/onePrinter.exe> |
-| 1.1.29 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.29/onePrinter.exe> |
-| 1.1.28 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.28/onePrinter.exe> |
-| 1.1.27 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.27/onePrinter.exe> |
-| 1.1.26 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.26/onePrinter.exe> |
-| 1.1.25 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.25/onePrinter.exe> |
-| 1.1.24 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.24/onePrinter.exe> |
-| 1.1.23 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.23/onePrinter.exe> |
-| 1.1.22 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.22/onePrinter.exe> |
-| 1.1.21 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.21/OnePrinter.exe> |
-| 1.1.20 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.20/onePrinter.exe> |
-| 1.1.19 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.19/onePrinter.exe> |
-| 1.1.18 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.18/onePrinter.exe> |
 
 ### 客户端
 
@@ -313,11 +298,31 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.44（2026年08月12日）
+
+**优化：**
+
+* 模板打印设计器的“页码”元素，在设计多纸张模板时，可以加入页码元素，自动生成对应的页码；
+
+**优化：**
+
+* 模板打印设计器的对齐选中判断，仅当选择一个元素时，对齐方式将以纸张为基准对齐；
+
+* 模板打印设计器的手型工具改成选中判断，在纸张中是光标可选择，在画布中是手型可拖拽；
+
+* 模板打印设计器的头部“添加页”按钮，并对头部进行了简化；
+  
+**修复：**
+
+* 模板打印设计器的批量打印的纸张选择、份数等问题；
+
+* 接口打印旋转的问题；
+
 #### 1.1.43（2026年08月10日）
 
 **优化：**
 
-* 模板打印设计器纸张网格线调为5mm、条形码（支持CODE128、UPC-A、UPC-E、EAN-13、CODE39、MSI、Pharmacode等条形码格式）。
+* 模板打印设计器纸张网格线调为5mm、条形码（支持CODE128、UPC-A、UPC-E、EAN-13、CODE39、MSI、Pharmacode等条形码格式）；
 
 **修复：**
 
@@ -802,5 +807,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
-
