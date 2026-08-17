@@ -40,6 +40,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.45 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.45/onePrinter.exe> |
 | 1.1.44 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.44/onePrinter.exe> |
 | 1.1.43 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.43/onePrinter.exe> |
 | 1.1.42 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.42/onePrinter.exe> |
@@ -50,7 +51,6 @@
 | 1.1.37 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.37/onePrinter.exe> |
 | 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
 | 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
-| 1.1.34 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.34/onePrinter.exe> |
 
 ### 客户端
 
@@ -297,6 +297,12 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.45（2026年08月17日）
+
+**新增：**
+
+* 隔空打印发打印时的内网预览。
 
 #### 1.1.44（2026年08月12日）
 
