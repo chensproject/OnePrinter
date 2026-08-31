@@ -1,6 +1,6 @@
 # OnePrinter 打印软件
 
-`OnePrinter`是北京网为科技有限公司（简称：网为®）推出的一款免费共享打印软件，致力于为企业提供高效、稳定的打印机共享、管理与调用解决方案。
+`OnePrinter`是北京网为科技有限公司（简称：网为®）推出的一款企业级免费共享打印软件，致力于为企业提供高效、稳定的打印机共享、管理与调用解决方案。
 
 `OnePrinter`不挑打印机、不挑网络环境、不挑操作系统、不用下载APP。
 
@@ -12,6 +12,7 @@
 * 支持端口号自定义。
 * 支持Word、Excel、PowerPoint、PDF、图片、Base64等文件类型。
 * 支持隔空打印，可限定分享的打印机、文件类型、限次、限时、份数、横版、双面、页码、彩色、纸张、验证口令、审核等，其他手机/电脑可扫码、打开链接或小程序上传打印。
+* 支持自助打印，可为打印店、自助打印机快速实现智慧打印。
 * 支持可视化打印模板设计（二维码、条形码、图片、方形、图片、文字等）、批量打印。
 * 支持本机打印。
 * 支持局域网设备管理，包括扫描、详情、备注、禁用/激活指定设备。
@@ -30,7 +31,9 @@
 
 ## 官网地址
 
-<https://www.oneprinter.cn> (还在建设中)
+<https://www.oneprinter.cn>
+
+## 文档地址
 
 <https://docs.wangwei.ltd/guide/oneprinter/>
 
@@ -40,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.46 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.46/onePrinter.exe> |
 | 1.1.45 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.45/onePrinter.exe> |
 | 1.1.44 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.44/onePrinter.exe> |
 | 1.1.43 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.43/onePrinter.exe> |
@@ -50,7 +54,6 @@
 | 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
 | 1.1.37 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.37/onePrinter.exe> |
 | 1.1.36 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.36/onePrinter.exe> |
-| 1.1.35 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.35/onePrinter.exe> |
 
 ### 客户端
 
@@ -87,6 +90,26 @@
 
 ::: window title="OnePrinter 隔空打印 - 用户端"
 ![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
+:::
+
+### 自助打印
+
+0元开店、超低费率。打印店只需设置好店铺名称、店铺地址、客服电话和店招广告，并开启文档、照片打印，设置相应的纸张类型及相应价格，即可快速实现自助打印功能。客户扫描店铺二维码，可制作、预览和发送打印文件，系统会自动计算订单金额。客户支付成功后会生成一个6位取件码，凭取件码可扫码取件。
+
+::: window title="OnePrinter 自助打印 - 店铺概况"
+![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/self/self_1.png)
+:::
+
+::: window title="OnePrinter 自助打印 - 店铺设置"
+![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/self/self_2.png)
+:::
+
+::: window title="OnePrinter 自助打印 - 订单明细"
+![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/self/self_3.png)
+:::
+
+::: window title="OnePrinter 自助打印 - 提现记录"
+![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/self/self_4.png)
 :::
 
 ### 模板打印
@@ -268,6 +291,7 @@ OnePrinterClient.exe -uninstall
 | 功能 | 免费版 | 授权版 | 专业版 | 定制版 |
 | --------- | ------ | ------ | ------ | ------ |
 | 隔空打印 | 限创建3个/天，限50次/分享 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
+| 自助打印 | ✅ 支持 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
 | 模板打印 | 水印 | ✅ 支持 | ✅ 支持 | ✅ 支持 |
 | 接口打印（本机/内网） | ✅ 免费 | ✅ 免费 | ✅ 免费 | ✅ 免费 |
 | 接口打印（外网） | 0.04元/次 | 0.02元/次 | 0.01元/次 | 0.01元/次 |
@@ -298,11 +322,17 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.46（2026年08月31日）
+
+**新增：**
+
+* 自助打印模块，打印店可0元开店，快速部署无线打印方案。；
+
 #### 1.1.45（2026年08月17日）
 
 **新增：**
 
-* 隔空打印发打印时的内网预览。
+* 隔空打印发打印时的内网预览；
 
 #### 1.1.44（2026年08月12日）
 
@@ -813,4 +843,5 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
 
