@@ -2,7 +2,7 @@
 
 `OnePrinter`是北京网为科技有限公司（简称：网为®）推出的一款企业级免费共享打印软件，致力于为企业提供高效、稳定的打印机共享、管理与调用解决方案。
 
-`OnePrinter`不挑打印机、不挑网络环境、不挑操作系统、不用下载APP。
+`OnePrinter`不挑打印机、不挑网络环境、不挑操作系统、不挑终端设备、不用下载APP。
 
 * 支持打印机不限。
 * 支持断网、内网独立运行。
@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.47 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.47/onePrinter.exe> |
 | 1.1.46 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.46/onePrinter.exe> |
 | 1.1.45 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.45/onePrinter.exe> |
 | 1.1.44 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.44/onePrinter.exe> |
@@ -322,11 +323,31 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.47（2026年09月01日）
+
+**新增：**
+
+* 服务端自助打印店铺设置的省地市、地图选点；
+
+**优化：**
+
+* 服务端自助打印扫码核销、查询、批量导出，店铺概况等，去掉取件码改为订单号；
+
+* 内网用户端打印界面；
+
+**修复：**
+
+* 服务端模板打印文本输入时导致误删元素问题；
+
+* 服务端图片打印自动旋转问题；
+
+* 小程序端部分型号手机的取件码显示问题；
+
 #### 1.1.46（2026年08月31日）
 
 **新增：**
 
-* 自助打印模块，打印店可0元开店，快速部署无线打印方案。；
+* 自助打印模块，打印店可0元开店，快速部署无线打印方案；
 
 #### 1.1.45（2026年08月17日）
 
