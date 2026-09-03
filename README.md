@@ -1,6 +1,5 @@
 # OnePrinter 打印软件
 
-
 `OnePrinter`是北京网为科技有限公司（简称：网为®）推出的一款企业级免费共享打印软件，致力于为企业提供高效、稳定的打印机共享、管理与调用解决方案。
 
 `OnePrinter`不挑打印机、不挑网络环境、不挑操作系统、不挑终端设备、不用下载APP。
@@ -44,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.49 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.49/onePrinter.exe> |
 | 1.1.48 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.48/onePrinter.exe> |
 | 1.1.47 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.47/onePrinter.exe> |
 | 1.1.46 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.46/onePrinter.exe> |
@@ -54,7 +54,6 @@
 | 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
 | 1.1.40 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.40/onePrinter.exe> |
 | 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
-| 1.1.38 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.38/onePrinter.exe> |
 
 ### 客户端
 
@@ -322,6 +321,20 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.49（2026年09月03日）
+
+**优化：**
+
+* 服务端网络设备管理挪至隔空打印中；
+
+* 服务端自助打印的打印纸张选择改成表格式；
+
+* 服务端隔空打印、模板打印列表的hover状态；
+
+**修复：**
+
+* 服务端自助打印金额显示；
 
 #### 1.1.48（2026年09月02日）
 
@@ -882,6 +895,5 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
 
 
