@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
 | 1.1.49 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.49/onePrinter.exe> |
 | 1.1.48 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.48/onePrinter.exe> |
 | 1.1.47 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.47/onePrinter.exe> |
@@ -52,8 +53,6 @@
 | 1.1.43 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.43/onePrinter.exe> |
 | 1.1.42 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.42/onePrinter.exe> |
 | 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
-| 1.1.40 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.40/onePrinter.exe> |
-| 1.1.39 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.39/onePrinter.exe> |
 
 ### 客户端
 
@@ -321,6 +320,26 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.50（2026年09月12日）
+
+**新增：**
+
+* 外网用户端（小程序）隔空打印的自动缓存功能，下次使用时可记忆；
+
+* 外网用户端（小程序）隔空打印的预览功能，可预览打印文件；
+  
+* 自助打印店铺首页地图导航、客服二维码或群二维码；
+
+**优化：**
+
+* 外网用户端（小程序）隔空打印的业务流程，确认后再打印；
+
+* 自助打印店铺打烊样式调整；
+
+**修复：**
+
+* 服务端在windows显示比例放大时，会黑屏的问题；
 
 #### 1.1.49（2026年09月03日）
 
