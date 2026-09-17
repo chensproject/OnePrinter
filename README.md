@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.51 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.51/onePrinter.exe> |
 | 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
 | 1.1.49 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.49/onePrinter.exe> |
 | 1.1.48 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.48/onePrinter.exe> |
@@ -321,6 +322,14 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.51（2026年09月17日）
+
+**新增：**
+
+* 服务端启动时，除第一次外，自动缩小至windows右下角系统托盘；
+
+* 服务端自助打印的黑白双面、彩色双面单价、自定义纸张名称；
+
 #### 1.1.50（2026年09月12日）
 
 **新增：**
@@ -334,6 +343,8 @@ OnePrinterClient.exe -uninstall
 **优化：**
 
 * 外网用户端（小程序）隔空打印的业务流程，确认后再打印；
+
+* 内网用户端隔空打印的业务流程，确认后再打印；
 
 * 自助打印店铺打烊样式调整；
 
@@ -914,5 +925,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
-
