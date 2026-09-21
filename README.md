@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.53 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.53/onePrinter.exe> |
 | 1.1.52 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.52/onePrinter.exe> |
 | 1.1.51 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.51/onePrinter.exe> |
 | 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
@@ -52,9 +53,6 @@
 | 1.1.46 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.46/onePrinter.exe> |
 | 1.1.45 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.45/onePrinter.exe> |
 | 1.1.44 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.44/onePrinter.exe> |
-| 1.1.43 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.43/onePrinter.exe> |
-| 1.1.42 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.42/onePrinter.exe> |
-| 1.1.41 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.41/onePrinter.exe> |
 
 ### 客户端
 
@@ -323,6 +321,12 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.53（2026年09月21日）
+
+**优化：**
+
+* 服务端自助打印的店铺设置中，纸张状态及价格；
+
 #### 1.1.52（2026年09月20日）
 
 **新增：**
@@ -330,7 +334,6 @@ OnePrinterClient.exe -uninstall
 * 服务端自助打印的店铺设置中，增加黑白单面、黑白双面、彩色单面、彩色双面的状态控制；
 
 * 服务端自助打印的订单管理中，必须点击【取件】才可入账提现，【取件】后无法【重打】、【审核】、【退款】；
-*
 
 **修复：**
 
@@ -939,3 +942,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
