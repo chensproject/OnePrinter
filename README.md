@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.55 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.55/onePrinter.exe> |
 | 1.1.54 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.54/onePrinter.exe> |
 | 1.1.53 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.53/onePrinter.exe> |
 | 1.1.52 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.52/onePrinter.exe> |
@@ -52,7 +53,6 @@
 | 1.1.48 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.48/onePrinter.exe> |
 | 1.1.47 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.47/onePrinter.exe> |
 | 1.1.46 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.46/onePrinter.exe> |
-| 1.1.45 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.45/onePrinter.exe> |
 
 ### 客户端
 
@@ -321,11 +321,23 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.55（2026年09月23日）
+
+**新增：**
+
+* 服务端自助打印的一机一码功能；
+
 #### 1.1.54（2026年09月22日）
+
+**优化：**
+
+* 为方便测试等工作，开放所有虚拟打印机选择；
+
+* 打印趋势、打印方式等图表的统一；
 
 **修复：**
 
-* 部分打印机驱动不支持黑白指令打印彩色内容的问题；
+* 部分彩色打印机驱动不支持黑白指令打印彩色内容的问题；
 
 #### 1.1.53（2026年09月21日）
 
@@ -948,4 +960,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
