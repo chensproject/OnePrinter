@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.56 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.56/onePrinter.exe> |
 | 1.1.55 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.55/onePrinter.exe> |
 | 1.1.54 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.54/onePrinter.exe> |
 | 1.1.53 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.53/onePrinter.exe> |
@@ -303,7 +304,7 @@ OnePrinterClient.exe -uninstall
 | 自有静态云存储功能和小程序 | ❌ 不支持 | ❌ 不支持 | ❌ 不支持 | ✅ 支持 |
 | 费用 | 免费 | 699元 | 4999元 | 面议 |
 
-咨询、加群、购买授权，可加微信二维码，备注：OnePrinter。
+咨询、加群、反馈、寻求帮助、购买授权，可加微信二维码，备注：OnePrinter。
 
 <img src="https://static.wangwei.ltd/image/chens.png"  width="120px" />
 
@@ -320,6 +321,12 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.56（2026年09月24日）
+
+**修复：**
+
+* 部分PDF、文档可能存在内嵌字体导致无法转化的问题；
 
 #### 1.1.55（2026年09月23日）
 
@@ -960,3 +967,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
