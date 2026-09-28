@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.58 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.58/onePrinter.exe> |
 | 1.1.57 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.57/onePrinter.exe> |
 | 1.1.56 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.56/onePrinter.exe> |
 | 1.1.55 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.55/onePrinter.exe> |
@@ -52,8 +53,6 @@
 | 1.1.51 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.51/onePrinter.exe> |
 | 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
 | 1.1.49 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.49/onePrinter.exe> |
-| 1.1.48 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.48/onePrinter.exe> |
-| 1.1.47 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.47/onePrinter.exe> |
 
 ### 客户端
 
@@ -321,6 +320,12 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.58（2026年09月28日）
+
+**新增：**
+
+* 服务端本地打印-证件照排版，支持智能抠图和排版；
 
 #### 1.1.57（2026年09月27日）
 
@@ -973,4 +978,3 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
-
