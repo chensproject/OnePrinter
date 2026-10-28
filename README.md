@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.59 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.59/onePrinter.exe> |
 | 1.1.58 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.58/onePrinter.exe> |
 | 1.1.57 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.57/onePrinter.exe> |
 | 1.1.56 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.56/onePrinter.exe> |
@@ -52,7 +53,6 @@
 | 1.1.52 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.52/onePrinter.exe> |
 | 1.1.51 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.51/onePrinter.exe> |
 | 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
-| 1.1.49 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.49/onePrinter.exe> |
 
 ### 客户端
 
@@ -320,6 +320,34 @@ OnePrinterClient.exe -uninstall
 得力dl720系列标签打印机默认设置可能存在毛边或锯齿问题，请在`首选项->图形->混色`调整为`无`
 
 ## 更新日志
+
+#### 1.1.59（2026年10月28日）
+
+**新增：**
+
+* 服务端【隔空打印】增加打印机拖拽排序；
+
+* 服务端【自助打印】增加纸张拖拽排序；
+  
+* 服务端【自助打印】增加装订要求、订单备注、商家备注；
+
+* 服务端左下角的锁屏功能，将原【自助打印】中的大屏广告升级为系统设置；
+
+* 用户端【自助打印】增加批量下单功能（待发布）；
+
+**优化：**
+
+* 服务端【模板打印】编辑时，虚拟打印机无纸张时的提示；
+
+* 服务端【模板打印】的设计界面增加纸张显示、初始化在屏幕正中央；
+
+**修复：**
+
+* 服务端【模板打印】的设计界面的锁定功能；
+
+* 服务端【自助打印】的提现问题、订单审核问题；
+
+* 授权版用户隔空打印权限验证错误问题；
 
 #### 1.1.58（2026年09月28日）
 
