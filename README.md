@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.60 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.60/onePrinter.exe> |
 | 1.1.59 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.59/onePrinter.exe> |
 | 1.1.58 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.58/onePrinter.exe> |
 | 1.1.57 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.57/onePrinter.exe> |
@@ -52,7 +53,6 @@
 | 1.1.53 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.53/onePrinter.exe> |
 | 1.1.52 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.52/onePrinter.exe> |
 | 1.1.51 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.51/onePrinter.exe> |
-| 1.1.50 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.50/onePrinter.exe> |
 
 ### 客户端
 
@@ -89,6 +89,14 @@
 
 ::: window title="OnePrinter 隔空打印 - 用户端"
 ![OnePrinter隔空打印 - 用户端](https://static.wangwei.ltd/image/guide/oneprinter/phone.png)
+:::
+
+### 网络设备
+
+网络设备管理功能可以管理局域网内所有发起打印的终端设备，并可禁止/激活相应设备。
+
+::: window title="OnePrinter 网络设备"
+![OnePrinter网络设备](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
 :::
 
 ### 自助打印
@@ -165,6 +173,8 @@ export async function toPrint() {
         printer:"", // 打印机名称。
         paper_size:"", // 纸张名称。
         copies:1, // 打印份数。
+        color:1,  // 0为黑白，1为彩色。
+        duplex:0, //0为单面，1为双面。
         url: "", // 打印文件的地址，如 https://static.wangwei.ltd/image/oneprinter_log.png，url或base64，二选一。
         base64: "", // 打印文件的base64代码,url或base64，二选一。
         // 以下内容，请在【模板打印】中设计模板，然后【下载字段】。
@@ -203,10 +213,10 @@ export async function toPrint() {
 
 ### 设备管理
 
-设备管理可以管理局域网内所有发起打印的终端设备，并可禁止/激活相应设备。
+设备管理可以管理电脑中所有已安装的打印机，为调整默认打印机。
 
 ::: window title="OnePrinter 设备管理"
-![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/device.png)
+![OnePrinter设备管理](https://static.wangwei.ltd/image/guide/oneprinter/printer.png)
 :::
 
 ### 系统设置
@@ -321,6 +331,20 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+### 1.1.60（2026年11月07日）
+
+**新增：**
+
+* 服务端【接口打印】增加彩色、双面传参；
+
+* 服务端增加【设备管理】模块；
+
+* 用户端【隔空打印】增加版本检测及提醒功能；
+
+**修复：**
+
+* 用户端【自助打印】复印件制版问题；
+
 #### 1.1.59（2026年10月28日）
 
 **新增：**
@@ -333,7 +357,7 @@ OnePrinterClient.exe -uninstall
 
 * 服务端左下角的锁屏功能，将原【自助打印】中的大屏广告升级为系统设置；
 
-* 用户端【自助打印】增加批量下单功能（待发布）；
+* 用户端【自助打印】增加批量下单功能；
 
 **优化：**
 
@@ -1006,3 +1030,4 @@ OnePrinterClient.exe -uninstall
 * 域名绑定和注册授权功能。
 
 * 支持Base64功能。
+
