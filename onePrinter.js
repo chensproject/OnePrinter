@@ -35,6 +35,8 @@ export async function toPrint(printer, paper_size, copies, url, base64, template
         printer: printer,
         paper_size: paper_size,
         copies: copies,
+        color:1,  // 0为黑白，1为彩色。
+        duplex:0, //0为单面，1为双面。
         url: url,
         base64: base64,
         template: template,
