@@ -1,4 +1,4 @@
-# OnePrinter 打印软件
+# OnePrinter 企业级免费打印机共享软件
 
 `OnePrinter`是北京网为科技有限公司（简称：网为®）推出的一款企业级免费共享打印软件，致力于为企业提供高效、稳定的打印机共享、管理与调用解决方案。
 
@@ -43,6 +43,7 @@
 
 | Windows | 下载地址 |
 | ----- | ----- |
+| 1.1.63 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.63/onePrinter.exe> |
 | 1.1.62 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.62/onePrinter.exe> |
 | 1.1.61 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.61/onePrinter.exe> |
 | 1.1.60 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.60/onePrinter.exe> |
@@ -52,7 +53,6 @@
 | 1.1.56 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.56/onePrinter.exe> |
 | 1.1.55 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.55/onePrinter.exe> |
 | 1.1.54 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.54/onePrinter.exe> |
-| 1.1.53 | <https://gitee.com/chenrongbin/oneprinter/releases/download/1.1.53/onePrinter.exe> |
 
 ### 客户端
 
@@ -331,13 +331,23 @@ OnePrinterClient.exe -uninstall
 
 ## 更新日志
 
+#### 1.1.63（2026年11月24日）
+
+**新增：**
+
+* 隔空打印、自助打印的编辑打印功能，用户端（微信小程序）可编辑内容并发起打印；
+
+**优化：**
+
+* 服务端【我的账户】调整至右上角；
+
 #### 1.1.62（2026年11月19日）
 
 **新增：**
 
 * 服务端【系统设置】是否禁用日志功能（开启后不再记录打印日志）；
 
-<!-- * 服务端【自助打印】自动取件功能（开启后订单支付24小时后自动收件）； -->
+* 服务端【自助打印】自动取件功能（开启后订单支付24小时后自动收件）；
   
 * 用户端【隔空打印】支持文档打印、图片打印、复印证件、发票打印、照片打印、证件照等功能（服务端1.1.62版以上并创建新的隔空打印）；
 
